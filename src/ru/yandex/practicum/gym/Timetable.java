@@ -38,7 +38,7 @@ public class Timetable {
             return emptyList;
         }
 
-        return innerMap.getOrDefault(timeOfDay, emptyList);
+        return new ArrayList<>(innerMap.getOrDefault(timeOfDay, emptyList));
 
     }
 
